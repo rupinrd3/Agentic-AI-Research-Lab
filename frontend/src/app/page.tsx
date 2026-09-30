@@ -180,14 +180,14 @@ export default function ResearchPage() {
           )}
 
           {/* Two-Column Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-[800px] animate-in fade-in duration-300">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 animate-in fade-in duration-300">
             {/* Left Panel: ReAct Trace Timeline */}
-            <div className="h-full">
+            <div className="h-[800px]">
               <ReactTraceTimeline iterations={iterations} />
             </div>
 
             {/* Right Panel: Research Output */}
-            <div className="h-full">
+            <div className="h-[800px]">
               <ResearchOutputPanel
                 report={report}
                 isGenerating={isGeneratingReport}
